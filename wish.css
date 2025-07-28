@@ -1,0 +1,148 @@
+
+.bpage{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vmin;
+  
+}
+
+#bcard{
+    /* margin-top: 120px; */
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    visibility: hidden;
+    background-color: rgb(255, 255, 255);
+    border: transparent;
+    border-radius: 20px;
+    padding: 40px;
+
+}
+
+#bcard:hover{
+    animation-name: cardup;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
+    
+}
+
+
+@keyframes cardup{
+  0%{
+scale:1;
+  }
+  100%{
+    opacity: 1;
+    scale: 1.05;
+  }
+}
+
+.atma-light {
+  font-family: "Atma", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 45px;
+  color: #136671;
+
+}
+
+
+.sour-gummy-p {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+   font-size: 25px;
+  color: #4d3042;
+}
+
+.barrio-regular {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: #b61452;
+}
+
+
+.btext{
+    width: 750px;
+    /* margin: 10px;
+    margin-left: 40px;
+    padding: 20px; */
+    min-width: 600px;
+}
+
+.imagesec {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+} 
+
+/* 
+.pbox{
+  
+ border-radius: 15px;
+  background-color: blue;
+
+} */
+.cr{
+  font-size: 30px; 
+  text-align: center; 
+  font-weight: 500;
+  border: transparent;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+
+/* #b{
+  position: fixed;
+  top: 300px;
+  left: 600px;
+
+} */
+
+.cbutton{
+  width: 300px;
+  height: 100px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b61452;
+  border: none;
+  border-radius: 100px;
+  color: antiquewhite;
+  cursor: pointer;
+  /* transition: 150ms ease-in;
+  transition: 50ms  e; */
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+
+.cbutton:hover{
+  color: #b61452;
+  background-color: #ffffff;
+}
+
+@keyframes fadein{
+  0%{
+opacity: 0;
+scale:0.7 ;
+  }
+  100%{
+    opacity: 1;
+    scale: 1.1;
+  }
+}
